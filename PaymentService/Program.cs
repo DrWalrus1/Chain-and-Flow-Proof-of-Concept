@@ -53,7 +53,7 @@ namespace PaymentService
     {
         public static void Main(string[] args)
         {
-            var monkey = new MonkeyHandler();
+            var monkey = new HasParseableContentHandler();
             var squirrel = new SquirrelHandler();
             var dog = new DogHandler();
             var animalFlow = new MonkeySquirrelDogFlow(monkey, squirrel, dog);

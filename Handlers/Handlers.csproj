@@ -43,11 +43,12 @@
         <Compile Include="Abstraction\AbstractHandler.cs" />
         <Compile Include="Abstraction\IFlow.cs" />
         <Compile Include="Abstraction\IHandler.cs" />
-        <Compile Include="Animals\DogHandler.cs" />
-        <Compile Include="Animals\MonkeyHandler.cs" />
-        <Compile Include="Animals\SquirrelHandler.cs" />
+        <Compile Include="HandlerCategoryOne\DogHandler.cs" />
+        <Compile Include="HandlerCategoryOne\HasParseableContentHandler.cs" />
+        <Compile Include="HandlerCategoryOne\SquirrelHandler.cs" />
         <Compile Include="Flows\MonkeySquirrelDogFlow.cs" />
         <Compile Include="HandlerChainCoordinator.cs" />
+        <Compile Include="IHasParseableContent.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>

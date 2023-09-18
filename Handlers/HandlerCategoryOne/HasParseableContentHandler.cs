@@ -2,11 +2,11 @@
 
 namespace Handlers.Animals;
 
-public class MonkeyHandler : AbstractHandler
+public class HasParseableContentHandler : AbstractHandler
 {
     public override object Handle(object request)
     {
-        if ((request as string) == "Banana")
+        if (request is IHasParseableContent)
         {
             return $"Monkey: I'll eat the {request.ToString()}.\n";
         }
